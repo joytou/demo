@@ -13,7 +13,7 @@ repo: joytou.github.io
 #Server
 url: http://joytou.nets.hk/demo
 github: https://github.com/joytou/
-baseurl: "demo"
+baseurl: "/demo"
 
 #Page settings
 future: true
