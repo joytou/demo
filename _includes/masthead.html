@@ -15,6 +15,7 @@
 		  <ul class="nav navbar-nav">
             <li class="{% if page.nav == "index" %} active{% endif %}"><a href="{{ site.url }}/"><span class="glyphicon glyphicon-home"></span>{{ translation.home }}</a></li>
             <li class="{% if page.nav == "about" %} active{% endif %}"><a href="{{ site.url }}/about/"><span class="glyphicon glyphicon-user"></span>{{ translation.about }}</a></li>
+			<li class="{% if page.nav == "about" %} active{% endif %}"><a href="{{ site.url }}/about/"><span class="glyphicon glyphicon-save"></span>{{ translation.download }}</a></li>
             <li class="dropdowm{% if page.nav == "post" %} active{% endif %}">
 		          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
 				  <span class="glyphicon glyphicon-sort-by-order-alt"></span>{{ translation.archivearticle }} <b class="caret"></b>
