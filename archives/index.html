@@ -1,8 +1,7 @@
 ---
 layout: default
 nav: post
-permalink: /cn/archives/
-lang: cn
+lang: en
 ---
 
 <ul id="myTab" class="nav nav-tabs">
@@ -12,7 +11,7 @@ lang: cn
 	{% if yearmonth != ym %}
 		{% assign yearmonth = ym %}
 	    <li{% if forloop.first %} class="active"{% endif %}>
-		  <a href="/{{ page.lang }}/archives/#aa{{ ym }}" data-toggle="tab">{{ post.date | date: "%Y年%m月" }}</a>
+		  <a href="/archives/#aa{{ ym }}" data-toggle="tab">{{ post.date | date: "%B %Y" }}</a>
     </li>
 	{% endif %}
 {% endif %}
@@ -37,6 +36,6 @@ lang: cn
 </div>
 <script>
     $(function () {
-        $('#myTab a[href="/{{ page.lang }}/archives/'+window.location.hash+'"]').tab('show');
+        $('#myTab a[href="/archives/'+window.location.hash+'"]').tab('show');
     });
 </script>
